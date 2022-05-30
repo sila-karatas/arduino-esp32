@@ -1,3 +1,20 @@
+#ifndef camera_pins_H
+#define camera_pins_H
+
+#ifdef ESP32
+
+#include <Arduino.h>
+#include "WiFiClientSecureESP32.h"
+#include <ETH.h> 
+#include <vector>
+#include <string>
+#include <SD.h>
+#include <SPI.h>
+#include <FS.h>
+#include <SPIFFS.h>
+#include "RFC2047.h"
+#include "ESP32MailHTTPClient.h"
+#include "ESP32TimeHelper.h"
 
 #if defined(CAMERA_MODEL_WROVER_KIT)
 #define PWDN_GPIO_NUM    -1
